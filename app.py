@@ -1,4 +1,4 @@
-```python
+python
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -602,4 +602,3 @@ st.caption(
     "Weld Crack Predictor | Machine Learning-Based "
     "Weld Defect Prediction"
 )
-```
