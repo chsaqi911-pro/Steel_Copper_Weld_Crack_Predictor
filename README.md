@@ -4,8 +4,10 @@
 
 The **Weld Crack Predictor** is a machine learning application developed to predict the likelihood of a crack occurring in a weld of dissimilar metals (Steel and Copper) based on selected welding process parameters.
 
-The application provides a simple web-based interface developed using **Streamlit**, allowing users to enter welding parameters and obtain an immediate prediction.
+The application provides a simple web-based interface developed using **Streamlit**, allowing users to enter welding parameters and obtain an immediate prediction. You can try it here:
+# Machine Learning Based Weld Crack Prediction Model
 
+🚀 **Live Demo:** [https://steelcopperweldcrackpredictor9110.streamlit.app/]
 ---
 
 ## 🎯 Objective
