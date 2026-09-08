@@ -101,7 +101,7 @@ input_method = st.radio(
 
 feature_info = {
 
-    "Dataset power (W)": {
+    "power (W)": {
         "min": 500.0,
         "max": 1600.0,
         "default": 1050.0,
@@ -181,12 +181,12 @@ if input_method == "Slider":
 
     with col1:
 
-        dataset_power = st.slider(
-            "Dataset power (W)",
-            min_value=feature_info["Dataset power (W)"]["min"],
-            max_value=feature_info["Dataset power (W)"]["max"],
-            value=feature_info["Dataset power (W)"]["default"],
-            step=feature_info["Dataset power (W)"]["step"]
+            power = st.slider(
+            "power (W)",
+            min_value=feature_info["power (W)"]["min"],
+            max_value=feature_info["power (W)"]["max"],
+            value=feature_info["power (W)"]["default"],
+            step=feature_info["power (W)"]["step"]
         )
 
         welding_speed = st.slider(
@@ -198,7 +198,7 @@ if input_method == "Slider":
         )
 
         heat_dissipated = st.slider(
-            "Heat dissipated",
+            "heat dissipated",
             min_value=feature_info["heat_dissipated"]["min"],
             max_value=feature_info["heat_dissipated"]["max"],
             value=feature_info["heat_dissipated"]["default"],
@@ -264,8 +264,8 @@ else:
 
     with col1:
 
-        dataset_power = st.number_input(
-            "Dataset power (W)",
+              power = st.number_input(
+            "power (W)",
             value=1050.0,
             step=10.0
         )
@@ -277,7 +277,7 @@ else:
         )
 
         heat_dissipated = st.number_input(
-            "Heat dissipated",
+            "heat dissipated",
             value=45.0,
             step=1.0
         )
@@ -327,7 +327,7 @@ else:
 
 input_data = pd.DataFrame({
 
-    "Dataset power (W)": [dataset_power],
+    "power (W)": [power],
 
     "welding_speed (m/min)": [welding_speed],
 
